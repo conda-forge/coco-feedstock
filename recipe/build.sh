@@ -23,3 +23,5 @@ chmod +x ${PREFIX}/bin/coco
 tee ${PREFIX}/bin/coco.cmd << EOF
 call %DOTNET_ROOT%\dotnet exec %CONDA_PREFIX%\libexec\coco\Coco.dll %*
 EOF
+
+rm ${PREFIX}/bin/dotnet
